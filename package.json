@@ -1,6 +1,6 @@
 {
   "name": "@du/select-version-cli",
-  "version": "0.0.6",
+  "version": "0.0.7-beta.0",
   "description": "A simple cli to help you select release version",
   "scripts": {
     "start": "./bin/select-version-cli",
