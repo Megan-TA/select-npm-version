@@ -8,7 +8,7 @@ VERSION=`npx select-version-cli`
 npm version --no-git-tag-version $VERSION 
 git add -A
 # --message "[package] $VERSION"
-git commit --amend -m "[release] $VERSION"
+git commit -m "[release] $VERSION"
 git push -u origin HEAD
 
 if [[ $VERSION =~ "beta" ]]
