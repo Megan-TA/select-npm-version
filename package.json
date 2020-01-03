@@ -12,8 +12,8 @@
     "semantic version"
   ],
   "bin": {
-    "select-version": "./bin/select-version-cli",
-    "select-version-publish": "./bin/release.sh"
+    "select-version-cli": "./bin/select-version-cli",
+    "select-version-publish-cli": "./bin/release.sh"
   },
   "repository": "git@pkg.poizon.com:duapp/web/targaryen/infra/select-version-cli.git",
   "author": "chen_huang <huangchen@theduapp.com>",

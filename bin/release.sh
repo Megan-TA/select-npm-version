@@ -1,12 +1,12 @@
 #! /bin/sh
 
-VERSION=`node select-version-cli`
+VERSION=`npx select-version-cli`
 
 git add -A
-git commit -m "[release] $VERSION"
+git commit -m "[build] $VERSION"
 npm version $VERSION 
 # --message "[release] $VERSION"
-git commit --amend
+git commit --amend -m "[release] $VERSION"
 git push
 
 if [[ $VERSION =~ "beta" ]]
