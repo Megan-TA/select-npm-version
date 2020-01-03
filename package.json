@@ -1,5 +1,5 @@
 {
-  "name": "select-version-cli",
+  "name": "@du/select-version-cli",
   "version": "0.0.4",
   "description": "A simple cli to help you select release version",
   "scripts": {
