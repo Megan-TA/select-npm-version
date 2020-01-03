@@ -5,5 +5,14 @@ VERSION=`./bin/select-version-cli`
 
 echo "release $VERSION"
 
-npm version $VERSION -m "[release] $VERSION"
-npm publish
+npm version --no-git-tag-version $VERSION 
+git add -A
+git commit -m "[release] $VERSION"
+git push -u origin HEAD
+
+if [[ $VERSION =~ "beta" ]]
+then
+    npm publish --tag beta
+else
+    npm publish
+fi
