@@ -3,9 +3,9 @@ set -e
 
 VERSION=`npx select-version-cli`
 
-git add -A
-git commit -m "[build] $VERSION"
-npm --no-git-tag-version version $VERSION 
+# git add -A
+# git commit -m "[build] $VERSION"
+npm version --no-git-tag-version $VERSION 
 git add -A
 # --message "[package] $VERSION"
 git commit --amend -m "[release] $VERSION"
