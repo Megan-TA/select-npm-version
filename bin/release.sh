@@ -6,6 +6,7 @@ VERSION=`npx select-version-cli`
 git add -A
 git commit -m "[build] $VERSION"
 npm --no-git-tag-version version $VERSION 
+git add -A
 # --message "[package] $VERSION"
 git commit --amend -m "[release] $VERSION"
 git push -u origin HEAD
