@@ -29,9 +29,9 @@ it("should pass", async () => {
         "premajor: 1.0.0-beta.0",
         "prerelease: 0.0.2-beta.0"
       ],
-      choose: 1
+      choose: 3
     }
   ]);
   const answers = await selectVersion();
-  expect(answers).toEqual("0.1.0");
+  expect(answers).toEqual("0.0.2-beta.0");
 });

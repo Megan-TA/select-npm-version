@@ -15,11 +15,13 @@
 提供相对统一的一键发布功能，包含 git 提交、npm 的发布过程
 一般只需要此命令进行发布
 
+注意：不能使用`publish`会导致内部的`npm publish`命令重复，导致死循环
+
 ```json
 // package.json
 
 scripts: {
-    "publish": "select-version-publish-cli"
+    "release": "select-version-publish-cli"
 }
 
 ```

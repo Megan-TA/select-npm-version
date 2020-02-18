@@ -23,11 +23,13 @@
   },
   "dependencies": {
     "commander": "^2.19.0",
+    "husky": "^3.1.0",
     "inquirer": "^6.2.2",
     "semver": "^5.6.0"
   },
   "devDependencies": {
     "jest": "^24.1.0",
+    "lint-staged": "^9.5.0",
     "mock-fs": "^4.8.0"
   }
 }
