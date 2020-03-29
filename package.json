@@ -1,5 +1,5 @@
 {
-  "name": "@du/select-version-cli",
+  "name": "select-version-cli",
   "version": "0.0.7",
   "description": "A simple cli to help you select release version",
   "scripts": {
@@ -15,11 +15,11 @@
     "select-version-cli": "./bin/select-version-cli",
     "select-version-publish-cli": "./bin/release.sh"
   },
-  "repository": "git@pkg.poizon.com:duapp/web/targaryen/infra/select-version-cli.git",
-  "author": "chen_huang <huangchen@theduapp.com>",
+  "repository": "git@github.com:Megan-TA/select-version-cli.git",
+  "author": "chen_huang",
   "license": "MIT",
   "publishConfig": {
-    "registry": "http://npm.poizon.com/"
+    "registry": "http://npmjs.com/"
   },
   "dependencies": {
     "commander": "^2.19.0",
