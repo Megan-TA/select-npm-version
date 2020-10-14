@@ -1,6 +1,6 @@
 {
   "name": "select-npm-version",
-  "version": "1.0.1-beta.0",
+  "version": "1.0.1",
   "description": "一个简单的 cli 帮助规范化发布 npm 包",
   "scripts": {
     "snv": "./bin/select-npm-version.js",
